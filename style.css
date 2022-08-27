@@ -1,0 +1,224 @@
+/*---------reset styles---------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*---------------------------*/
+
+/* -----------fonts------------- */
+
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./assets/fonts/georgia/georgia-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./assets/fonts/georgia/georgia-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./assets/fonts/arial/arial-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('./assets/fonts/arial/arial-bold-italic.ttf') format('truetype');
+}
+/*---------------------------*/
+
+body {
+  min-height: 100vh;
+  line-height: 1;
+  background-color: #ffffff;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 15px;
+  color: #545454;
+  background-image: url(./assets/home.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app {
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.ancients-container {
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-between; */
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 40%;
+  padding: 20px;
+}
+
+.ancients-container .ancient-card {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 260px;
+  width: 200px;
+}
+
+.ancient-card img {
+  width: 100%;
+}
+
+.ancients-container .ancient-card.active {
+  border: 2px solid red;
+}
+
+.difficulty-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  justify-content: center;
+}
+
+.difficulty-container .difficulty {
+  border: 2px solid purple;
+  box-sizing: border-box;
+  color: purple;
+  cursor: pointer;
+  padding: 5px;
+  text-align: center;
+}
+
+.difficulty-container .difficulty.active {
+  background-color: red;
+}
+
+.deck-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  min-width: 30%;
+}
+
+.deck-container .shuffle-button {
+  background-color: red;
+  border: 2px solid purple;
+  color: purple;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.deck-container .current-state {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 30%;
+}
+
+.deck-container .current-state .stage-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.deck-container .current-state .stage-container .stage-text {
+  color: purple;
+}
+
+.deck-container .current-state .stage-container .dots-container {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.deck-container .current-state .stage-container .dot.green {
+  background-color: green;
+}
+
+.deck-container .current-state .stage-container .dot.brown {
+  background-color: brown;
+}
+
+.deck-container .current-state .stage-container .dot.blue {
+  background-color: blue;
+}
+
+.deck-container .current-state .stage-container .dot {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.deck-container .deck, .deck-container .last-card {
+  background-size: cover;
+  height: 190px;
+  width: 130px;
+}
+
+.deck-container .deck {
+  cursor: pointer;
+}
+
+.deck-container .deck, .deck-container .last-card {
+  background-size: cover;
+  height: 190px;
+  width: 130px;
+}
