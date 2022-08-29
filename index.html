@@ -11,10 +11,10 @@
   <div class="wrapper">
     <div class="app">
       <div class="ancients-container">
-        <div class="ancient-card">
+        <div class="ancient-card active">
           <img src="./assets/Ancients/Azathoth.png" alt="card-image">
         </div>
-        <div class="ancient-card">
+        <!-- <div class="ancient-card">
           <img src="./assets/Ancients/Cthulthu.png" alt="card-image">
         </div>
         <div class="ancient-card">
@@ -22,17 +22,45 @@
         </div>
         <div class="ancient-card">
           <img src="./assets/Ancients/ShubNiggurath.png" alt="card-image">
-        </div>
+        </div> -->
       </div>
       <div class="difficulty-container">
-        <div class="difficulty">Низкая</div>
-        <div class="difficulty">Средняя</div>
-        <div class="difficulty">Высокая</div>
+        <!-- <div class="difficulty">Низкая</div> -->
+        <div class="difficulty active">Средняя</div>
+        <!-- <div class="difficulty">Высокая</div> -->
       </div>
       <div class="deck-container">
-        <span class="shuffle-button">Замешать колоду</span>
+          <span class="shuffle-button">Замешать колоду</span>
+          <div class="deck-container current-state" id="deck-state">
+            <div class="stage-container">
+              <!-- <span class="stage-text">Первая стадия</span>
+              <div class="dots-container">
+                <div class="dot green"></div>
+                <div class="dot brown"></div>
+                <div class="dot blue"></div>
+              </div>
+            </div>
+            <div class="stage-container">
+              <span class="stage-text">Вторая стадия</span>
+              <div class="dots-container">
+                <div class="dot green"></div>
+                <div class="dot brown"></div>
+                <div class="dot blue"></div>
+              </div>
+            </div>
+            <div class="stage-container">
+              <span class="stage-text">Третья стадия</span>
+              <div class="dots-container">
+                <div class="dot green"></div>
+                <div class="dot brown"></div>
+                <div class="dot blue"></div>
+              </div> -->
+            </div>
+            <div class="deck"></div>
+            <div class="last-card"></div>
       </div>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
