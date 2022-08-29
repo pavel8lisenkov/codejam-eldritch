@@ -168,7 +168,7 @@ body {
   min-height: 30%;
 }
 
-.deck-container .current-state .stage-container {
+.deck-container .current-state .stage-container .deck-state {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -221,4 +221,25 @@ body {
   background-size: cover;
   height: 190px;
   width: 130px;
+}
+
+.deck {
+  background-image: url("./assets/mythicCardBackground.png");
+  background-size: cover;
+  height: 190px;
+  width: 130px;
+}
+
+.last-card {
+  background-size: cover;
+  height: 190px;
+  width: 130px;
+}
+
+.deck-container .display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
 }
