@@ -86,9 +86,9 @@ cardsOfThreeStage = shuffle(cardsOfThreeStage.flat());
  
 let deckOfCards = [];
  
-deckOfCards.push(cardsOfFirstStage);
-deckOfCards.push(cardsOfTwoStage);
 deckOfCards.push(cardsOfThreeStage);
+deckOfCards.push(cardsOfTwoStage);
+deckOfCards.push(cardsOfFirstStage);
  
 deckOfCards = deckOfCards.flat();
  
